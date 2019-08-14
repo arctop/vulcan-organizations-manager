@@ -38,10 +38,27 @@ const restrictedPermission = (user, document) => {
   );
 };
 ```
+or if you'd like to use VulcanJS Groups & Permissions system:
+```js
+import { getCollection } from 'meteor/vulcan:lib';
+
+const restrictedPermission = (user, document) => {
+  return (
+    getCollection('Users').isAdmin(user) ||
+    getCollection('Users').isMemberOf(
+      user,
+      getCollection('Organizations').findOne(document.organizationId).slug
+    )
+  );
+};
+``` 
+
 and on the relevant schema fields:
 ```js
 canRead: restrictedPermission
 ```
+
+also see a use case for a `checkAccess` function on this package's `collection.js` and `resolvers.js`.
 ## Contributing
 
 This package will evolve and improve depending on the use cases we encounter. Best way to contribute is to use it in your own app, and propose ideas, suggestions and PR based on your experience.

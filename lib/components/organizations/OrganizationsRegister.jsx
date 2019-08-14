@@ -7,33 +7,39 @@ import { intlShape } from 'meteor/vulcan:i18n';
 
 const accessOptions = {
   groups: ['guests'],
-  redirect: '/',
+  redirect: '/'
 };
 
-const OrganizationsRegister = (props, {history}) => {
+const OrganizationsRegister = (props, { history }) => {
   return (
-    <div className="container">
-      <Components.AccountsLoginForm
-        extraFields={[
-          {
-            defaultValue: props.match.params.id,
-            id: 'organizationId',
-            required: false,
-          },
-        ]}
-        formState={STATES.SIGN_UP}
-        showSignInLink={false}
-        requireEmailVerification={true}
-        onPostSignUpHook={() => {
-          history && history.push('/');
-        }}
-      />
-      <p className="accounts-prompt">
-        <FormattedMessage id="accounts.already_have_an_account"/>{' '}
-        <Link to="/log-in">
-          <FormattedMessage id="accounts.log_in_here"/>
-        </Link>
-      </p>
+    <div className="account account-with-topbar">
+      <div className="account__wrapper">
+        <div className="account__card">
+          <div className="page accounts-page accounts-sign-up">
+            <Components.AccountsLoginForm
+              extraFields={[
+                {
+                  defaultValue: props.match.params.id,
+                  id: 'organizationId',
+                  required: false
+                }
+              ]}
+              formState={STATES.SIGN_UP}
+              showSignInLink={false}
+              requireEmailVerification={true}
+              onPostSignUpHook={() => {
+                history && history.push('/');
+              }}
+            />
+            <p className="accounts-prompt">
+              <FormattedMessage id="accounts.already_have_an_account" />{' '}
+              <Link to="/log-in">
+                <FormattedMessage id="accounts.log_in_here" />
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
@@ -41,10 +47,10 @@ const OrganizationsRegister = (props, {history}) => {
 OrganizationsRegister.displayName = 'OrganizationsRegister';
 
 OrganizationsRegister.contextTypes = {
-  intl: intlShape,
+  intl: intlShape
 };
 
 registerComponent('OrganizationsRegister', OrganizationsRegister, withRouter, [
   withAccess,
-  accessOptions,
+  accessOptions
 ]);
