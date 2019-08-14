@@ -2,9 +2,7 @@
 
 ## Manage and create organizations
 
-This package helps to generate users management pages for [Vulcan.js](http://vulcanjs.org/) applications. It is based on [Vulcan Backoffice Builder](https://github.com/lbke/vulcan-backoffice-builder).
-
-The current Vulcan account system (1.12.3) makes it complex to administrate users, for example if you need to setup their password yourself or even to create them manually. This package provides helpers to facilitate this kind of workflows.
+This package helps to manage organizations on [Vulcan.js](http://vulcanjs.org/) applications. Including organizations dashboard for the app's admin and generating registration URLs.
 
 **/!\ This is an experimental package, API will certainly evolve in the months to come**.
 
