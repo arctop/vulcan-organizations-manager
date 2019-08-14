@@ -1,0 +1,26 @@
+{
+  "name": "vulcan-organizations-manager",
+  "version": "0.0.1",
+  "description": "",
+  "main": "package.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arctop/vulcan-organizations-manager.git"
+  },
+  "keywords": [
+    "vulcan",
+    "JavaScript"
+  ],
+  "author": "Arctop Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arctop/vulcan-organizations-manager/issues"
+  },
+  "homepage": "https://github.com/arctop/vulcan-organizations-manager#readme"
+}
