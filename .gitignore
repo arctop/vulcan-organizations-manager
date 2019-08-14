@@ -24,6 +24,7 @@ production.settings.json
 settings.json
 settings.json.not-used
 .idea
+.idea/*
 
 scratch
 
