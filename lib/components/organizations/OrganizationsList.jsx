@@ -44,7 +44,7 @@ const OrganizationsList = ({
           showSearch={true}
           showEdit={true}
           columns={[
-            'title',
+            'name',
             {
               name: 'registrationUrl',
               component: RegistrationUrlCell
