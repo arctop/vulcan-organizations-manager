@@ -19,7 +19,7 @@ You can clone it directly in your app `packages` folder. You can also clone it i
 Then use the package in your app:
 
 ```js
-import { theFunctionYouNeed } from "arctop:vulcan-organizations-manager"
+import { theFunctionYouNeed } from "vulcan:organizations-manager"
 ```
 
 This package won't be published on Atmosphere or npm until it is a bit more mature.
