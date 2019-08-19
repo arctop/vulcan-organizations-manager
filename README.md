@@ -32,21 +32,21 @@ import { getCollection } from 'meteor/vulcan:lib';
 const restrictedPermission = (user, document) => {
   return (
     getCollection('Users').isAdmin(user) ||
-    document.organizationId === user.organizationId
+    getCollection('Users').isMemberOf(
+      user,
+      getCollection('Organizations').findOne(document.organizationId).slug
+    )
   );
 };
 ```
-or if you'd like to use VulcanJS Groups & Permissions system:
+or if you wouldn't like to use VulcanJS Groups & Permissions system:
 ```js
 import { getCollection } from 'meteor/vulcan:lib';
 
 const restrictedPermission = (user, document) => {
   return (
     getCollection('Users').isAdmin(user) ||
-    getCollection('Users').isMemberOf(
-      user,
-      getCollection('Organizations').findOne(document.organizationId).slug
-    )
+    document.organizationId === user.organizationId
   );
 };
 ``` 
