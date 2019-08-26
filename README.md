@@ -4,7 +4,7 @@
 
 This package helps to manage organizations on [Vulcan.js](http://vulcanjs.org/) applications. Including organizations dashboard for the app's admin and generating registration URLs.
 
-**/!\ This is an experimental package, API will certainly evolve in the months to come**.
+**/!\ This is an experimental package**.
 
 ## Installation
 
@@ -59,9 +59,9 @@ canRead: restrictedPermission
 also see a use case for a `checkAccess` function on this package's `collection.js` and `resolvers.js`.
 ## Contributing
 
-This package will evolve and improve depending on the use cases we encounter. Best way to contribute is to use it in your own app, and propose ideas, suggestions and PR based on your experience.
+Best way to contribute is to use it in your own app, and propose ideas, suggestions and PR based on your experience.
 
-We seek for maximum reusability, so each method should be as configurable as possible, and split into independant functions whenever possible.
+We seek for maximum reusability, so each method should be as configurable as possible, and split into independent functions whenever possible.
 
 Possible improvements:
 
