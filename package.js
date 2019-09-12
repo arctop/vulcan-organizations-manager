@@ -9,4 +9,6 @@ Package.onUse((api) => {
   api.addFiles('lib/stylesheets/main.scss');
   api.mainModule('lib/server/main.js', 'server');
   api.mainModule('lib/client/main.js', 'client');
+
+  api.addAssets(['lib/server/templates/invitationNotificationEmailTemplate.handlebars.v1',], ['server']);
 });

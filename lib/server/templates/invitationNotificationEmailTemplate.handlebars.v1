@@ -1,0 +1,4 @@
+<span class="heading">
+Hello ! {{user.result.displayName}} added you as a member of its organization at <a href="{{SiteData.url}}">{{SiteData.title}}</a>.
+</span>
+<br><br>
