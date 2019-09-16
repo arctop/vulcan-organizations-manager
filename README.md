@@ -13,7 +13,7 @@ Clone this repo:
 ```sh
 git clone https://github.com/arctop/vulcan-organizations-manager
 ```
-Or install with Atmosphere:
+Or install with meteor:
 ```sh
 meteor add arctop:vulcan-organizations-manager
 ```
@@ -23,7 +23,7 @@ You can clone it directly in your app `packages` folder. You can also clone it i
 Then use the package in your app:
 
 ```js
-import { theFunctionYouNeed } from "meteor/arctop:vulcan-organizations-manager"
+import { theFunctionYouNeed } from arctop_vulcan-organizations-manager
 ```
 
 This package won't be published on Atmosphere or npm until it is a bit more mature.
