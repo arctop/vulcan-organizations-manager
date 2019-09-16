@@ -2,6 +2,7 @@ Package.describe({
   name: 'arctop:vulcan-organizations-manager',
   summary: 'Organizations manager package for VulcanJS',
   version: '0.0.1',
+  git: 'https://github.com/arctop/vulcan-organizations-manager',
 });
 
 Package.onUse((api) => {
