@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Package.onUse((api) => {
-  api.use(['vulcan:core@1.3.2', 'vulcan:accounts@1.3.2', 'fourseven:scss@4.5.0']);
+  api.use(['vulcan:core@1.13.2', 'vulcan:accounts@1.13.2', 'vulcan:email@1.13.2', 'fourseven:scss@4.5.0']);
   api.addFiles('lib/stylesheets/main.scss');
   api.mainModule('lib/server/main.js', 'server');
   api.mainModule('lib/client/main.js', 'client');
