@@ -13,7 +13,7 @@ const accessOptions = {
 };
 
 import Organizations from '../../modules/organizations/collection.js';
-
+import OrganizationsInviteButton from '../../components/organizations/OrganizationsInviteButton';
 {
   /* These are "props". They are variables for the component that are passed by the components parent.
   In this case, to create the parent we wrapped the component in "Higer Order Compoents" (See the Higer Order Compoents section below.)
@@ -39,6 +39,7 @@ const OrganizationsList = ({
       <Components.Loading />
     ) : (
       <div className="container">
+        <Components.FlashMessages />
         <Components.Datatable
           collection={Organizations}
           showSearch={true}
@@ -48,6 +49,10 @@ const OrganizationsList = ({
             {
               name: 'registrationUrl',
               component: RegistrationUrlCell
+            },
+            {
+              name: 'invite',
+              component: OrganizationsInviteButton
             }
           ]}
         />
