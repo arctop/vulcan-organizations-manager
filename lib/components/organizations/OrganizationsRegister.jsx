@@ -28,7 +28,7 @@ const OrganizationsRegister = (props, {history}) => {
               showSignInLink={false}
               requireEmailVerification={true}
               onPostSignUpHook={() => {
-                history && history.push('/');
+                props.history && props.history.push('/');
               }}
             />
           </div>
