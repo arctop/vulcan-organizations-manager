@@ -1,4 +1,11 @@
 .account {
+  .orgs-sign-up {
+    .fields {
+      .field:first-child {
+        display: none;
+      }
+    }
+  }
   #organizationId {
     display: none;
   }
