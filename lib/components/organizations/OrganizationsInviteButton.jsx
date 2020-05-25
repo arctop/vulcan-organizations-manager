@@ -51,7 +51,7 @@ class InviteForm extends React.Component {
       },
     );
     this.props.closeModal();
-  };
+  }
 
   render() {
     return (
