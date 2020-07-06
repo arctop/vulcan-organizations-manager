@@ -73,5 +73,5 @@ Possible improvements:
 - Temporary registration URL for new organization members
 - Allow organization admin to add existing app members to an organization 
 
-*[Built with love by Arctop](https://github.com/arctop)*
+*[Contributed by Arctop](https://github.com/arctop)*
 
